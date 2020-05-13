@@ -25,7 +25,8 @@
 
 h3 { text-align: center;
 }
-
+h5 { text-align: center;
+}
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
@@ -46,16 +47,20 @@ div {
   }
 
 table {
+    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
   
-th, td {
+td, th {
+    border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
   
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
 
 .navbar {
     padding-top: 15px;
@@ -69,3 +74,21 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
+
+.sidetext{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.side-bg { 
+    background-color: #D3D3D3; /* light gray */
+    color: #555555;
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
